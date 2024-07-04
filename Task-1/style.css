@@ -1,0 +1,11 @@
+/* Paragraph using class */
+.Paragraph-3 {
+    color: rgb(255, 255, 255);
+    background: #2601f7;
+}
+
+/* Paragraph using id */
+#Paragraph-4 {
+    background: #73e257;
+    font-size: larger;
+}
