@@ -1,0 +1,41 @@
+/* Using Class */
+.div-1 {
+    background: sandybrown;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.head-text {
+    color: white;
+}
+.para-text {
+    color: white;
+}
+
+/* Using id */
+#div-2 {
+    background-color: black;
+    padding: 20px;
+}
+
+.div-3 {
+    margin-top: 10px;
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+}
+/* table */
+table {
+    margin-top:30px ;
+}
+th {
+    background: #000;
+    color: white;
+}
+td {
+    color: blue;
+}
+table ,th ,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: cursive;
+}
