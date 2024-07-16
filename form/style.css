@@ -1,0 +1,50 @@
+body {
+    background: #000;
+    color: white;
+}
+#registration {
+    text-align: center;
+    border: 2px solid sandybrown;
+    margin: 20px 500px;
+    padding: 20px;
+    background: #7fd19a;
+    border-radius: 20px;
+}
+h1 {
+    color: red;
+}
+form {
+    text-align: left;
+}
+input,textarea {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+label {
+    font-weight: 700;
+}
+.submit-btn,.reset-btn {
+    padding: 10px;
+    background: #000;
+    color: white;
+}
+
+#registrations {
+    text-align: center;
+    border: 2px solid sandybrown;
+    margin: 100px 500px;
+    padding: 20px;
+    background: #8871db;
+    border-radius: 20px;
+}
+table>tr {
+    margin-bottom: 10px;
+    background: #b94444;
+}
+table {
+    text-align: center;
+}
+a {
+    color: white;
+}

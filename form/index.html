@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="registration">
+      <h1>Registration Form</h1>
+      <form action="./login.html">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          name="fname"
+          placeholder="enter your first name"
+          required
+        /><br /><br />
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          name="lname"
+          placeholder="enter your last name"
+          required
+        /><br /><br />
+        <label for="email">Email id</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="enter your email"
+          required
+        /><br /><br />
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          name="pass"
+          placeholder="enter your password"
+          required
+        /><br /><br />
+        <label for="pass">Confirm Password</label>
+        <input
+          type="password"
+          name="pass"
+          placeholder="enter your password"
+          required
+        /><br /><br />
+        <label for="mobile_no">Mobile Number</label>
+        <input
+          type="tel"
+          name="mobile_no"
+          placeholder="enter your contact number"
+          required
+        /><br /><br />
+        <label for="address">Address</label>
+        <textarea
+          cols="30"
+          rows="3"
+          name="lname"
+          placeholder="enter your address"
+          required
+        ></textarea
+        ><br /><br />
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" required />Male
+        <input type="radio" name="gender" required />Female<br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" required /><br /><br />
+
+        <label for="department">Department</label>
+        <select name="department" id="department" required>
+          <option value="computer">Computer Science</option>
+          <option value="accountancy">Accountancy</option>
+          <option value="commerce">Commerce</option>
+          <option value="history">History</option></select
+        ><br /><br />
+
+        <label for="">Language Known</label><br />
+        <input type="checkbox" id="language1" name="language2" value="Tamil"/>
+        <label for="language1"> Tamil</label><br />
+        <input
+          type="checkbox"
+          id="language2"
+          name="language2"
+          value="English"
+        />
+        <label for="language2"> English</label><br />
+        <input type="checkbox" id="language3" name="language3" value="Hindi"/>
+        <label for="language3"> Hindi</label><br /><br />
+        <label for="my-file">Select a file:</label>
+        <input type="file" id="my-file" name="my-file" /><br /><br />
+
+        <label for="color">Pick your profile color:</label>
+        <input type="color" name="color" required/><br /><br />
+
+        <label for="url">Websiite</label>
+        <input type="url" name="url" required/><br /><br />
+
+        <input type="submit" name="submit" class="submit-btn"/>
+        <input type="reset" name="reset" class="reset-btn"/>
+      </form>
+    </div>
+  </body>
+</html>
