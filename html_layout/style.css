@@ -39,3 +39,10 @@ a {
 p {
     text-align: justify;
 }
+.media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
