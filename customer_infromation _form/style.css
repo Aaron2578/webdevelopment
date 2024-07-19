@@ -1,0 +1,79 @@
+.container
+{
+    width: 50%;
+    background: #d6c7c7;
+    margin: auto;
+    padding: 20px 20px;
+    /* display: flex; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header {
+    text-align: center;
+}
+span {
+    color: red;
+}
+.name-div input,select{
+    margin-top:5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.address-div input {
+    width: 98%;
+    margin-top:10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.sub-address {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.customer-contact {
+    width: 98%;
+    margin-top:10px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+}
+.sub-contact {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.sub-contact input {
+    padding: 5px;
+    border-radius: 10px;
+}
+.customer-reachout {
+    width: 98%;
+    margin-top:10px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+}
+.sub-reachout {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.sub-reachout input {
+    padding: 5px;
+    border-radius: 10px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+.button input{
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Information Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Customer Information Form</h1>
+      </div>
+      <p>
+        Please fill out the customer information form below to join. Fields
+        marked with red star are mandatory.
+      </p>
+      <hr />
+      <div>
+        <form>
+          <div class="name-div">
+            <label for="name">Customer Name<span>*</span></label
+            ><br />
+            <select name="name" id="name">
+              <option value="Title">Title</option>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Miss">Miss</option>
+              <option value="Master" default>Master</option>
+            </select>
+            <input type="text" name="name" placeholder="First" />
+            <input type="text" name="name" placeholder="Initial" />
+            <input type="text" name="name" placeholder="Last" /><br /><br />
+          </div>
+
+          <div class="address-div">
+            <label for="address">Customer Address <span>*</span></label><br />
+            <input
+              type="text"
+              name="address"
+              placeholder="Street Address"
+            /><br />
+            <input
+              type="text"
+              name="address"
+              placeholder="Street Address Line2"
+            /><br />
+            <div class="sub-address">
+              <input type="text" name="address" placeholder="City" />
+              <input type="text" name="address" placeholder="Region" />
+            </div>
+            <div class="sub-address">
+              <input
+                type="text"
+                name="address"
+                placeholder="Postal / Zip Code"
+              />
+              <input type="text" name="address" placeholder="Country" />
+            </div>
+          </div>
+
+          <div class="customer-contact">
+            <div class="sub-contact">
+              <label for="phone">Customer Phone</label>
+              <input type="tel" name="phone" placeholder="### ### ####" />
+            </div>
+
+            <div class="sub-contact">
+              <label for="fax">Customer Fax</label>
+              <input type="tel" name="fax" placeholder="### ### ####" />
+            </div>
+          </div>
+
+          <div class="customer-reachout">
+            <div class="sub-reachout">
+              <label for="dob">Customer DOB</label>
+              <input type="date" name="dob" />
+            </div>
+
+            <div class="sub-reachout">
+              <label for="mail">Customer Email id</label>
+              <input type="email" name="mail" />
+            </div>
+          </div>
+
+          <p>
+            All customer information is kept with descretion and will not be
+            used for other marketing or advertisement purposes without customer
+            approval.
+          </p><br>
+
+          <input type="checkbox" id="allow" name="allow" />
+          <label for="allow">I allow my information used for future campaigns.</label><br /><br><br>
+
+
+          <div class="button">
+            <input type="button" value="Send Information" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
