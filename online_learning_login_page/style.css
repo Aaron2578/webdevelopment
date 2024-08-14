@@ -1,0 +1,97 @@
+.container {
+    width: 60%;
+    margin: 50px auto;
+}
+.row {
+    display: flex;
+    background: #f8ffff;
+}
+.col-6 {
+    width: 100%;
+    height: fit-content;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+p {
+    color:rgb(48, 48, 197);
+    font-weight: 900;
+    text-align: center;
+}
+.special-para {
+    font-size: 20px;
+    color: white;
+    animation: special-para .7s infinite;
+}
+h3 {
+    color:rgb(48, 48, 197);
+    font-weight: 900;
+}
+#small {
+    font-size: 10px;
+    color: black;
+}
+input {
+    padding: 2px 60px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.btn {
+    background: #509ad6;
+    color: white;
+    padding: 10px 120px;
+}
+.btn:hover {
+    padding: 10px 120px;
+    animation: special-btn .9s;
+}
+
+@keyframes special-para {
+    0% {
+        color: white;
+    }
+    50% {
+        color: red;
+    }
+    80% {
+        color: green;
+    }
+}
+@keyframes special-btn {
+    0% {
+        color: white;
+    }
+    80% {
+        background: red;
+        font-size: 15px;
+    }
+}
+.right {
+    margin-top: 10px;
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.para-second {
+    margin-top: 10px;
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: black;
+    font-size: 15px;
+}
+.logo-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.last-div {
+    color: black;
+    font-size: 12px;
+    text-align: left;
+}
