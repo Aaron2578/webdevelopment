@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="side-nav">
+      <div class="nav-head">
+        <div>
+          <img src="./pictures/justrise.png" alt="logo" width="40px" />
+        </div>
+        <div class="d-flex column-gap-2">
+          <div>
+            <p>Olivia<span>Busy</span></p>
+          </div>
+          <div class="profile-pic">
+            <img src="./pictures/profile pic.jpg" alt="profile pic" width="40px" />
+          </div>
+        </div>
+      </div>
+      <div class="apps">
+        <p class="my-3">Apps</p>
+        <div class="nav-list">
+          <div>
+            <a href=""><img src="./icons/dashboard.svg" alt="dashboard" width="22px" />
+              <p class="text-primary">Dashboard</p>
+            </a>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div>
+            <a href=""><img src="./icons/mail.svg" alt="dashboard" width="22px" />
+              <p>Mailbox</p>
+            </a>
+          </div>
+          <div><span class="badge text-bg-danger text-end">87</span></div>
+        </div>
+        <div class="nav-list">
+          <div>
+            <a href=""><img src="./icons/cloud.svg" alt="dashboard" width="22px" />
+              <p>File Manager</p>
+            </a>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div>
+            <a href=""><img src="./icons/calendar.svg" alt="dashboard" width="22px" />
+              <p>Calendar</p>
+            </a>
+          </div>
+          <div><span class="badge text-bg-success text-end">14</span></div>
+        </div>
+        <div class="nav-list">
+          <div>
+            <a href=""><img src="./icons/todo.svg" alt="dashboard" width="22px" />
+              <p>Todo</p>
+            </a>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div>
+            <a href=""><img src="./icons/logout.svg" alt="dashboard" width="22px" />
+              <p>Logout</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="nav-box d-flex justify-content-between align-items-center px-4">
+          <div class="controls d-flex gap-4">
+            <img src="./icons/back.svg" alt="back btn" width="20px" />
+            <img src="./icons/plus.svg" alt="plus" width="20px" />
+            <img src="./icons/navigator.svg" alt="navigator" width="20px" />
+          </div>
+          <div class="profile d-flex justify-content-between align-items-center column-gap-4">
+            <div class="d-flex">
+              <ul class="d-flex column-gap-4">
+                <li>Applications</li>
+                <li>Reports</li>
+                <li>Projects</li>
+              </ul>
+            </div>
+            <div class="d-flex column-gap-4">
+              <img src="./icons/search.svg" alt="serach" width="20px" />
+              <img src="./icons/flag.svg" alt="american flag" width="20px" />
+              <img src="./icons/number.svg" alt="number" width="20px" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-2">
+        <section class="quick-wrapper">
+          <h3>Dashboard</h3>
+          <hr>
+          <div class="row d-flex justify-content-between">
+            <div class="col">
+              <div><img src="./icons/dollar.svg" alt="dollar" width="25px"></div>
+              <div><span>TODAY'S SALES</span><span>$38,211</span><span>471 Orders Total</span></div>
+              <div>
+                <img src="./icons/down-arrow.svg" alt="down arrow" width="10px"><span>4%</span>
+              </div>
+            </div>
+            <div class="col">
+              <div><img src="./icons/profile.svg" alt="dollar" width="25px"></div>
+              <div><span>ACTIVE USERS</span><span>23,491</span><span>790 unique this month</span></div>
+              <div>
+                <img src="./icons/top arrow.svg" alt="top arrow" width="20px"><span>12%</span>
+              </div>
+            </div>
+            <div class="col">
+              <div><img src="./icons/download.svg" alt="dollar" width="25px"></div>
+              <div><span>DOWNLOADS</span> <span>140,390</span><span>87 items downloaded</span></div>
+              <div>
+                <img src="./icons/top arrow.svg" alt="top arrow" width="20px"><span>7%</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="task-wrapper">
+          <div class="row d-flex justify-content-between">
+            <div class="col d-flex flex-column active-task-1">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>Active Tasks</div>
+                <div>14 completed</div>
+              </div>
+              <div style="color: rgb(173, 171, 171);">showing 5 out of 23 active tasks</div>
+              <div class="d-flex flex-column justify-content-between" style="height:250px">
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-1">
+                    <img src="./icons/file.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div>Dashboard UI optimisations</div>
+                    <div>Oskar Hudson</div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-2">
+                    <img src="./icons/security.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div>Mailbox cleanup</div>
+                    <div>Woodrow Hawkins</div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-3">
+                    <img src="./icons/time.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div>Header scroll bugfix</div>
+                    <div>Sky Meyers</div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-4">
+                    <img src="./icons/puzzle.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div>Localization for file manager</div>
+                    <div>Oskar Hudson</div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-5">
+                    <img src="./icons/blood.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div>New E-commerce UX/UI design</div>
+                    <div>Oskar Hudson</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex flex-column active-task-2">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>Todo</div>
+                <div>14 completed</div>
+              </div>
+              <div style="color: rgb(173, 171, 171);">showing 5 out of 23 active tasks</div>
+              <div class="d-flex flex-column justify-content-between" style="height:250px">
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-1">
+                    <img src="./icons/checkbox.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div>Dashboard UI optimisations</div>
+                    <div>Oskar Hudson</div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-2">
+                    <img src="./icons/checkbox-tick.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div>Dashboard UI optimisations</div>
+                    <div>Oskar Hudson</div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-3">
+                    <img src="./icons/checkbox-tick.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div>Dashboard UI optimisations</div>
+                    <div>Oskar Hudson</div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-4">
+                    <img src="./icons/checkbox.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div>Dashboard UI optimisations</div>
+                    <div>Oskar Hudson</div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-5">
+                    <img src="./icons/checkbox-tick.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div>Dashboard UI optimisations</div>
+                    <div>Oskar Hudson</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex flex-column active-task-1">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>In Progress Tasks</div>
+                <div>37% total</div>
+              </div>
+              <div style="color: rgb(173, 171, 171);">showing 5 out of 9 in progress tasks</div>
+              <div class="d-flex flex-column justify-content-between" style="height:250px">
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-1">
+                    <img src="./icons/file.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column" style="width: 100%;">
+                    <div>Dashboard UI optimisations</div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                      aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+                      <div class="progress-bar" style="width: 37%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-2">
+                    <img src="./icons/security.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column" style="width: 100%;">
+                    <div>Mailbox cleanup</div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                      aria-valuemin="0" aria-valuemax="100" style="height: 5px; width: 100%;">
+                      <div class="progress-bar" style="width: 56%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-3">
+                    <img src="./icons/time.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column" style="width: 100%;">
+                    <div>Header scroll bugfix</div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                      aria-valuemin="0" aria-valuemax="100" style="height: 5px; width: 100%;">
+                      <div class="progress-bar" style="width: 20%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-4">
+                    <img src="./icons/puzzle.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column" style="width: 100%;">
+                    <div>Localization for file manager</div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                      aria-valuemin="0" aria-valuemax="100" style="height: 5px; width: 100%;">
+                      <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="icons-images-5">
+                    <img src="./icons/blood.svg" alt="file" width="20px">
+                  </div>
+                  <div class="d-flex flex-column" style="width: 100%;">
+                    <div>New E-commerce UX/UI design</div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                      aria-valuemin="0" aria-valuemax="100" style="height: 5px; width: 100%;">
+                      <div class="progress-bar" style="width: 30%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="earnings">
+          <div class="earning-wrapper d-flex flex-row">
+            <div class="earning d-flex flex-column" id="chart">
+              <div class="d-flex justify-content-between" style="width:100%;">
+                <div>Earnings</div>
+                <div id="earning-year">Last Year</div>
+              </div>
+            </div>
+            <div class="report-wrapper">
+              <div class="d-flex justify-content-between align-items-start">
+                <div id="report">Report</div>
+                <div id="uploaded">
+                  <p>Uploaded 8min ago</p>
+                </div>
+              </div>
+              <div style="margin: 10px 0px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptate
+                quidem nisi, ipsa doloremque similique.</div>
+              <div class="reporting-list d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center" id="list-1">
+                  <div>Neptune-v1.0</div>
+                  <div class="d-flex">
+                    <span style="color: green;">14%</span> <img src="./icons/top arrow.svg" alt="down-arrow"
+                      width="15px">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center" id="list-2">
+                  <div>Space-v1.2</div>
+                  <div class="d-flex">
+                    <span style="color: red;">7%</span> <img src="./icons/down-arrow.svg" alt="down-arrow" width="10px">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center" id="list-2">
+                  <div>Lime-v10.3</div>
+                  <div class="d-flex">
+                    <span style="color: green;">21%</span><img src="./icons/top arrow.svg" alt="down-arrow"
+                      width="15px">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center" id="list-2">
+                  <div>Circl-v2.3</div>
+                  <div class="d-flex">
+                    <span style="color: green;">17% <img src="./icons/top arrow.svg" alt="down-arrow" width="15px">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center" id="list-2">
+                  <div>Connect-v1.7</div>
+                  <div class="d-flex">
+                    <span style="color: red;">3% <img src="./icons/down-arrow.svg" alt="down-arrow" width="10px">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="task-overflow">
+          <div class="row d-flex justify-content-between">
+            <div class="col px-0 py-0">
+              <div class="special">
+                <div>
+                  <div><img src="./icons/round-tick.svg" alt="dollar" width="30px"></div>
+                  <div><span>TASKS COMPLETED</span><span>1,871</span></div>
+                  <div>
+                    <img src="./icons/down-arrow black.svg" alt="down arrow" width="20px"><span>18%</span>
+                  </div>
+                </div>
+                <div>
+                  <img src="./icons/wave (3).svg" alt="waves">
+                </div>
+              </div>
+            </div>
+            <div class="col py-0 px-0">
+              <div class="special">
+                <div>
+                  <div><img src="./icons/star.svg" alt="dollar" width="30px"></div>
+                  <div><span>ENGAGEMENT</span><span>45,661</span></div>
+                  <div>
+                    <img src="./icons/top arrow black.svg" alt="down arrow" width="20px"><span>25%</span>
+                  </div>
+                </div>
+                <div>
+                  <img src="./icons/wave2.svg" alt="waves">
+                </div>
+              </div>
+            </div>
+            <div class="col py-0 px-0">
+              <div class="special">
+                <div>
+                  <div><img src="./icons/wallet.svg" alt="dollar" width="30px"></div>
+                  <div><span>BALANCE</span><span>$218,655</span></div>
+                  <div>
+                    <img src="./icons/down-arrow black.svg" alt="down arrow" width="20px"><span>9%</span>
+                  </div>
+                </div>
+                <div>
+                  <img src="./icons/wave (4).svg" alt="waves">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="connection">
+          <div class="row">
+            <div class="col-8">
+              <div>
+                <div><img src="./pictures/mountain.jpg" alt="mountain" height="70"></div>
+                <div>
+                  <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br> Quae tempora facere
+                    labore optio molestias, hic harum eaque iure? Animi nam molestiae odio eaque similique commodi vel
+                    harum quisquam aspernatur, blanditiis maiores, iste quis, voluptate amet ad tempore quaerat
+                    consequuntur minima architecto quos mollitia</p>
+                </div>
+              </div>
+              <hr>
+              <div class="time">
+                <div>
+                  <p>Date:6:30 PM</p>
+                </div>
+                <div><button class="btn btn-primary">Read More</button></div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div>
+                <div>Connection Request</div>
+                <div>17min ago</div>
+              </div>
+              <div>
+                <div><img src="./pictures/profile pic.jpg" alt="profile" height="100px"></div>
+                <div>
+                  <span>Woodrow Hawkins</span>
+                  <span>45 mutual connections</span>
+                  <span>seniour Go Developer at Google</span>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img src="./icons/tick.svg" alt="tick" width="15px">Approve
+                </div>
+                <div>
+                  <img src="./icons/cross.svg" alt="tick" width="15px">Ignore
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
